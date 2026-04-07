@@ -1,0 +1,133 @@
+body {
+  background: #fff;
+  font-family: Papyrus, sans-serif;
+}
+
+.gif-left, .gif-right {
+  position: fixed;   /* fica fixo na tela */
+  top: 50%;          /* centraliza verticalmente */
+  transform: translateY(-50%); /* ajusta para o centro exato */
+  width: 300px;      /* ajuste o tamanho conforme necessário */
+  z-index: 999;      /* garante que fique acima do conteúdo */
+}
+
+.gif-left {
+  left: 0;           /* encosta na lateral esquerda */
+}
+
+.gif-right {
+  right: 0;          /* encosta na lateral direita */
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  border: 2px dashed black;
+  text-align: center;
+}
+
+.main-img {
+  width: 400px;
+  height: 500px;
+}
+
+.gif {
+  display: block;
+  margin: 20px auto;
+}
+
+#hall-da-fama {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Texto em arco */
+.arc-text {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  margin: auto;
+}
+
+.arc-text span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform-origin: 0 300px;
+  font-size: 56px;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Distribuição arco */
+.arc-text span:nth-child(1) { transform: rotate(-90deg); }
+.arc-text span:nth-child(2) { transform: rotate(-75deg); }
+.arc-text span:nth-child(3) { transform: rotate(-60deg); }
+.arc-text span:nth-child(4) { transform: rotate(-45deg); }
+.arc-text span:nth-child(5) { transform: rotate(-30deg); }
+.arc-text span:nth-child(6) { transform: rotate(-15deg); }
+.arc-text span:nth-child(7) { transform: rotate(0deg); }
+.arc-text span:nth-child(8) { transform: rotate(15deg); }
+.arc-text span:nth-child(9) { transform: rotate(30deg); }
+.arc-text span:nth-child(10) { transform: rotate(45deg); }
+.arc-text span:nth-child(11) { transform: rotate(60deg); }
+.arc-text span:nth-child(12) { transform: rotate(75deg); }
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.mySlides { display: none; }
+
+.mySlides img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.text {
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Botões */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover { background-color: #717171; }
