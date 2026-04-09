@@ -4,6 +4,7 @@ body {
 }
 
 .gif-left, .gif-right {
+  position: fixed;
   top: 50%;          
   transform: translateY(-50%); 
   width: 300px;      
