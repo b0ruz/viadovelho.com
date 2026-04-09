@@ -7,7 +7,7 @@ body {
   position: fixed;   /* fica fixo na tela */
   top: 50%;          /* centraliza verticalmente */
   transform: translateY(-50%); /* ajusta para o centro exato */
-  width: 150px;      /* ajuste o tamanho conforme necessário */
+  width: 300px;      /* ajuste o tamanho conforme necessário */
   z-index: 999;      /* garante que fique acima do conteúdo */
 }
 
