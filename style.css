@@ -4,19 +4,18 @@ body {
 }
 
 .gif-left, .gif-right {
-  position: fixed;   /* fica fixo na tela */
-  top: 50%;          /* centraliza verticalmente */
-  transform: translateY(-50%); /* ajusta para o centro exato */
-  width: 300px;      /* ajuste o tamanho conforme necessário */
-  z-index: 999;      /* garante que fique acima do conteúdo */
+  top: 50%;          
+  transform: translateY(-50%); 
+  width: 300px;      
+  z-index: 999;      
 }
 
 .gif-left {
-  left: 0;           /* encosta na lateral esquerda */
+  left: 0;           
 }
 
 .gif-right {
-  right: 0;          /* encosta na lateral direita */
+  right: 0;          
 }
 
 .container {
